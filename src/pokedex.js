@@ -1,18 +1,13 @@
 import React from "react"
+import Pokecard from "./Pokecard"
 
-const pokedex = ({pokedex}) => {
-       return (
+const Pokedex = ({pokedex}) => {
+    return (
         <>
-        {pokedex.map(p => {
-            <>
-            <h2>{p.name}</h2>
-            <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.id}.png`}/>
-            <p>{p.type}</p>
-            <p>{p.base_experience}</p>
-            </>
-        })}
+        {pokedex.map(p => 
+            <Pokecard name={p.name} id={p.id} type={p.type} base_experience={p.base_experience} />)}
         </>
-        )
+    )
 }
 
-export default pokedex
+export default Pokedex

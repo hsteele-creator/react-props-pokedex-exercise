@@ -1,0 +1,12 @@
+.Pokecard-container {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    background-color: lightgrey;
+    margin: 20px;
+}
+
+.title {
+    font-weight: bold;
+    color: blue;
+}
